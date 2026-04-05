@@ -1,6 +1,6 @@
 import argparse
 from connect4 import connect4
-from players import humanGUI, stupidAI, randomAI, humanConsole, minimaxAI, alphaBetaAI
+from marqlo_players_final_ver import humanGUI, stupidAI, randomAI, humanConsole, minimaxAI, alphaBetaAI
 from montecarlo import monteCarloAI
 
 parser = argparse.ArgumentParser(description='Run programming assignment 2')

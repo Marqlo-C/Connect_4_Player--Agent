@@ -1,10 +1,10 @@
 from connect4 import connect4
-from Lott_Marq_players import randomAI, alphaBetaAI
+from marqlo_players_final_ver import randomAI, alphaBetaAI
 from montecarlo import monteCarloAI
 
 
 board_shape = (6,7)
-visualize = False 
+visualize = True
 verbose = False
 limit_players = (1,2)
 time_limit = (3.0, 3.0)

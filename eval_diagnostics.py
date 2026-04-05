@@ -1,6 +1,6 @@
 import numpy as np
 from copy import deepcopy
-from players import alphaBetaAI
+from marqlo_players_final_ver import alphaBetaAI
 
 # Create a mock environment
 class MockEnv:

@@ -44,7 +44,7 @@ class humanConsole(connect4Player):
 class humanGUI(connect4Player):
     def play(self, env, move_dict):
         global screen
-        # If screen isn't set, grab the surface created by main.py
+        # If screen isn't set, grab the surface created by game_launcher.py
         if screen is None:
             screen = pygame.display.get_surface()
 
@@ -426,7 +426,7 @@ class alphaBetaAI(connect4AI):
         
         return value
 
-# This block ensures the screen only initializes if you run players.py directly
+# This block ensures the screen only initializes if you run marqlo_players_final_ver.py directly
 if __name__ == '__main__':
     pygame.init()
     screen = pygame.display.set_mode((width, height))

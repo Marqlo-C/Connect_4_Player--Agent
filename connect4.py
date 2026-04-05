@@ -171,15 +171,15 @@ class connect4():
 			else:
 				print('The game has tied')
 
-		# Continue visualizing the board after game is over until GUI is closed		
-		spectating = True
-		while spectating and self.visualize:
-			for event in pygame.event.get():
-				if event.type == pygame.QUIT:
-					pygame.quit()
-					sys.exit()
-					spectating = False
-					break
+		# Continue visualizing the board after game is over
+		if self.visualize:
+			end_time = time.time() + 2
+			while time.time() < end_time:
+				for event in pygame.event.get():
+					if event.type == pygame.QUIT:
+						pygame.quit()
+						sys.exit()
+			pygame.quit()
 
 		return winner
 

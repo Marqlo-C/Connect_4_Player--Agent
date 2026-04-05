@@ -1,6 +1,6 @@
 import numpy as np
 import random
-from players import connect4Player
+from marqlo_players_final_ver import connect4Player
 from connect4 import connect4
 from copy import deepcopy
 
